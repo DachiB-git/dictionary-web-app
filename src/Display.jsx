@@ -46,15 +46,22 @@ function Display(data) {
         <div className="line"></div>
         <div className="display-bottom">
           <p className="light-text">Source</p>
-          <a href={data.sourceUrls[0]} target="_blank">
-            {data.sourceUrls[0]}
+          <div className="source-link">
+            <a href={data.sourceUrls[0]} target="_blank">
+              {data.sourceUrls[0]}
+            </a>
             <span
               className="material-symbols-outlined"
-              style={{ fontSize: "1rem", border: "none" }}
+              style={{
+                fontSize: "1rem",
+                border: "none",
+                color: "gray",
+                userSelect: "none",
+              }}
             >
               open_in_new
             </span>
-          </a>
+          </div>
         </div>
       </div>
     </>

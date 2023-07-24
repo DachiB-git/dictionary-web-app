@@ -129,10 +129,12 @@ form {
   font-size: 0.8rem;
   padding-bottom: 2em;
 }
-a {
-  outline-color: blueviolet;
+.source-link {
   display: flex;
   align-items: center;
+}
+a {
+  outline-color: blueviolet;
 }
 a:link {
   color: gray;
