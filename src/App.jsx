@@ -45,6 +45,7 @@ function App() {
           type="text"
           onChange={handleInputChange}
           value={word}
+          placeholder="Search for a word..."
           className="search-input"
         />
       </form>
@@ -52,9 +53,9 @@ function App() {
         <div className="placeholder">
           <span
             className="material-symbols-outlined"
-            style={{ color: "blueviolet" }}
+            style={{ color: "blueviolet", fontSize: "2rem" }}
           >
-            refresh
+            sort
           </span>
           <p>Definitions will appear here</p>
         </div>
