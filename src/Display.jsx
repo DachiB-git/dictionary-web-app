@@ -48,6 +48,12 @@ function Display(data) {
           <p className="light-text">Source</p>
           <a href={data.sourceUrls[0]} target="_blank">
             {data.sourceUrls[0]}
+            <span
+              className="material-symbols-outlined"
+              style={{ fontSize: "1rem", border: "none" }}
+            >
+              open_in_new
+            </span>
           </a>
         </div>
       </div>

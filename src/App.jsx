@@ -19,6 +19,8 @@ function App() {
       setTimeout(() => {
         container.classList.add("active");
       }, 750);
+    } else {
+      setData(null);
     }
   }
   function handleInputChange(e) {
@@ -46,9 +48,26 @@ function App() {
           className="search-input"
         />
       </form>
+      {!data && (
+        <div className="placeholder">
+          <span
+            className="material-symbols-outlined"
+            style={{ color: "blueviolet" }}
+          >
+            refresh
+          </span>
+          <p>Definitions will appear here</p>
+        </div>
+      )}
       <div className="container">
         {(data && !("title" in data) && <Display {...data[0]} />) ||
-          (data && <h2>{data.title}</h2>)}
+          (data && (
+            <div className="no-definition">
+              <h2>{data.title}</h2>
+              <p className="highlight">{data.message}</p>
+              <p className="light-text">{data.resolution}</p>
+            </div>
+          ))}
       </div>
     </div>
   );

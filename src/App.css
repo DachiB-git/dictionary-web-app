@@ -131,6 +131,8 @@ form {
 }
 a {
   outline-color: blueviolet;
+  display: flex;
+  align-items: center;
 }
 a:link {
   color: gray;
@@ -140,4 +142,18 @@ a:visited {
 }
 a:active {
   color: blueviolet;
+}
+.no-definition .highlight {
+  font-size: 0.9rem;
+}
+.no-definition .light-text {
+  margin-top: 2em;
+}
+.placeholder {
+  margin: auto;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.placeholder span {
+  user-select: none;
 }
