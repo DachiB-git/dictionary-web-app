@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  height: 100vh;
+  font-family: "Noto Serif", serif;
+  margin: auto;
+}
+.App {
+  height: 100%;
+  padding: 1.5em 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.container {
+  opacity: 0;
+}
+.active {
+  transition: 1s all ease;
+  opacity: 100;
+}
+.search-input {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(240, 240, 240);
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
+  outline-color: blueviolet;
+}
+.search-btn span {
+  display: block;
+}
+.highlight {
+  color: blueviolet;
+}
+
+li::marker {
+  color: blueviolet;
+}
+ul li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  line-height: 2;
+  font-size: 0.9rem;
+}
+.light-text {
+  color: rgb(145, 145, 145);
+}
+.meaning {
+  margin-bottom: 1em;
+}
+.audio-play-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(218, 199, 235);
+  border-radius: 50%;
+  cursor: pointer;
+  outline-color: blueviolet;
+}
+.audio-play-btn::after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-right: 16px;
+  width: 0;
+  height: 0;
+  border-right: none;
+  border-top: 7px solid transparent;
+  border-left: 14px solid blueviolet;
+  border-bottom: 7px solid transparent;
+  background-color: none;
+}
+.display-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.search-btn {
+  background: none;
+  border: 0;
+  color: blueviolet;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 1em;
+  outline-color: blueviolet;
+}
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.speech-font {
+  font-family: "Handlee", serif;
+  font-weight: bold;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid rgb(240, 240, 240);
+}
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.display-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.display-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 0.8rem;
+  padding-bottom: 2em;
+}
+a {
+  outline-color: blueviolet;
+}
+a:link {
+  color: gray;
+}
+a:visited {
+  color: gray;
+}
+a:active {
+  color: blueviolet;
+}
