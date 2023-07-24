@@ -3,10 +3,10 @@
 A dictionary app using the free dictionary api.
 
 Built with:
-# HTML
-# CSS
-# React
+* HTML
+* CSS
+* React
 
 Features to add:
-# Dark mode
-# Font changer
+* Dark mode
+* Font changer
